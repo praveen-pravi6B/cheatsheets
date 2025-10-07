@@ -9,6 +9,8 @@ category: CLI
 -codecs          # list codecs
 -c:v             # video codec (-vcodec) - 'copy' to copy stream
 -c:a             # audio codec (-acodec)
+-ss              # Stream Seek (90 = 1min 30sec, 01:00:00 = 1hr)
+-t               # Time Duration (10 for first 10 sec)
 ```
 
 ```bash
