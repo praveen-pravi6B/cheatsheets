@@ -31,6 +31,8 @@ category: CLI
 -r RATE          # frame rate per sec
 -s WIDTHxHEIGHT  # frame size
 -vn              # no video
+-pix_fmt FORMAT  # Pixel Format (yuv420p, yuv420p10le)
+-crf LEVEL       # Constant rate factor (0-51 lower value for high quality)
 ```
 
 ### Audio
