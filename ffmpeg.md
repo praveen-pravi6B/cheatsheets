@@ -50,6 +50,19 @@ category: CLI
 ```bash
 ffmpeg -i foo.mp3 -ac 1 -ab 128000 -f mp4 -acodec libfaac -y target.m4r
 ```
+### Stream Selection in ffmpeg
+
+```bash
+ffmpeg -i input1.mp4 -i input2.mp4 -map 0:v:0 -map 1:a:0 output.mp4
+# To create output file with video from 1st file & audio from 2nd file.
+
+ffmpeg -i input1.mp4 -i input2.mp3 -map 0:v -map 1:a output.mkv
+# To create output file with all video streams from 1st file & audio streams from 2nd file.
+
+# -map [INPUT_FILE_INDEX]:[STREAM_SPECIFIER]
+# -map [INPUT_FILE_INDEX]:[STREAM_SPECIFIER]:[STREAM_INDEX]
+```
+
 
 ### To web
 
